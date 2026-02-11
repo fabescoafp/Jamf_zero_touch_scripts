@@ -1,4 +1,4 @@
-# Jamf_zero_touch_scripts ? Adobe_Nuke_Apps
+# Jamf_zero_touch_scripts / Adobe_Nuke_Apps
 Scripts, utilities, and workflows for Jamf  Pro / ABM auto enrollment
 Adobe__CC25
 #!/bin/bash
