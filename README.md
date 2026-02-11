@@ -167,15 +167,6 @@ else
     sleep 10 # Keep error message visible for longer
 fi
 
-# Wait for the user to click the "Done" or "Close" button
-# Swift Dialog automatically closes when a button is clicked, or if commanded to quit.
-# We keep the dialog alive by not killing it immediately after success/failure messages
-# until the user clicks the button.
 
-# If the script exits before the user clicks, the trap will handle killing the dialog.
-# However, to explicitly wait for a button click, you'd typically remove the trap's exit,
-# and use a `dialog` feature like `--json` output to detect the button press.
-# For simplicity, and since the trap already covers cleanup, we'll let the user's interaction
-# with the enabled button implicitly close the dialog, or the trap will catch script exit.
 
 exit ${INSTALL_STATUS}
